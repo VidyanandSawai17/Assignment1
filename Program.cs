@@ -43,6 +43,49 @@ namespace Assignment1
             Console.WriteLine($"  A = {A}");
             Console.WriteLine($"  B = {B}");
 
+
+
+
+            Console.WriteLine(" Enter emp id");
+
+            int Emp_id = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine(" Enter emp_name");
+
+            string Emp_name = Convert.ToString(Console.ReadLine());
+
+
+            Console.WriteLine(" Enter salary");
+
+            double Salary = Convert.ToInt32(Console.ReadLine());
+
+
+            double hra = (12 * Salary) / 100;
+            Console.WriteLine($" HRA : {hra}");
+
+
+            double ba = (20 * Salary) / 100;
+            Console.WriteLine($" BA : {ba}");
+
+
+            double ta = (10 * Salary) / 100;
+            Console.WriteLine($" TA : {ta}");
+
+
+            double total = (double)Salary + hra + ba + ta;
+            Console.WriteLine($" Salary : {total}");
+
+            double pf = (20 * total) / 100;
+            Console.WriteLine($" PF : {pf}");
+
+
+            double Net_Salary = total - pf;
+
+
+            Console.WriteLine($" Net Salary {Net_Salary}");
+
+
         }
     }
 }
